@@ -68,6 +68,7 @@
     "external-svg-sprite-loader": "^2.0.0",
     "file-loader": "^0.10.0",
     "husky": "^0.13.1",
+    "opn": "^4.0.2",
     "postcss-css-variables": "^0.6.0",
     "postcss-cssnext": "^2.9.0",
     "postcss-import": "^9.1.0",

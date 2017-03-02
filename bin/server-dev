@@ -16,6 +16,7 @@ const webpackClientConfig = require('../config/webpack/webpack-client.config.js'
 const webpackServerConfig = require('../config/webpack/webpack-server.config.js');
 const validator = require('./util/validator');
 const manifest = require('./util/manifest');
+const opn = require('opn');
 
 const projectDir = `${__dirname}/..`;
 
@@ -242,6 +243,8 @@ function runServer() {
 
             process.stdout.write('\nServer is now up and running, press CTRL-C to stop.');
             process.stdout.write('\nBuilding for the first time, please wait...\n\n');
+
+            opn(`http://${argv.hostname}:${argv.port}`);
         });
     });
 }
